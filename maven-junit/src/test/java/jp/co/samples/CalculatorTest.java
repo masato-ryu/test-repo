@@ -14,4 +14,13 @@ public class CalculatorTest {
     assertThat(result, is(8));
     
   }
+  
+  @Test
+  public void OnlyAIsNaturalNumber() {
+    
+    int result = Calculator.absAdd(3, -2);
+    
+    assertThat(result, is(3));
+    
+  }
 }
