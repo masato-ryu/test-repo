@@ -20,7 +20,7 @@ public class CalculatorTest {
     
     int result = Calculator.absAdd(3, -2);
     
-    assertThat(result, is(3));
+    assertThat(result, is(5));
     
   }
 }
