@@ -9,6 +9,9 @@ on:
 jobs:
   # build job
   build:
+    permissions:
+      checks: write
+      pull-requests: write
     # Runnerを指定
     runs-on: ubuntu-latest
     # Step
@@ -47,3 +50,4 @@ jobs:
         uses: EnricoMi/publish-unit-test-result-action@v2
         with:
           junit_files: artifacts/**/*.xml
+
